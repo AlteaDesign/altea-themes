@@ -1,3 +1,5 @@
+## FORK FROM [SVELTE-THEMES](https://github.com/beynar/svelte-themes) FOR ALTEA-DESIGN SYSTEM INTERNAL USE.
+
 This library is a port of [next-theme](https://github.com/pacocoursey/next-themes/) for SvelteKit. All credit goes to [pacocoursey](https://github.com/pacocoursey) and all [next-themes contributors](https://github.com/pacocoursey/next-themes/graphs/contributors)
 
 While usable, this library is still in its early phase, PR are welcome.
