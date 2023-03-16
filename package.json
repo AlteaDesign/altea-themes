@@ -1,6 +1,6 @@
 {
-	"name": "svelte-themes",
-	"version": "0.0.100",
+	"name": "@altea/svelte-themes",
+	"version": "0.0.102",
 	"repository": "https://github.com/beynar/svelte-themes",
 	"homepage": "https://github.com/beynar/svelte-themes",
 	"license": "MIT",
@@ -12,10 +12,18 @@
 		"sveltejs",
 		"sveltekit"
 	],
+	"exports": {
+		".": {
+		  "svelte": "./src/lib/index.ts"
+		}
+	},
+	"files": [
+		"dist"
+	],
 	"scripts": {
 		"dev": "vite dev --port 9000",
 		"build": "vite build",
-		"package": "svelte-kit package",
+		"package": " svelte-kit sync && svelte-package",
 		"preview": "svelte-kit preview",
 		"check": "svelte-check --tsconfig ./tsconfig.json",
 		"check:watch": "svelte-check --tsconfig ./tsconfig.json --watch",
@@ -33,7 +41,7 @@
 		"eslint-plugin-svelte3": "^3.2.1",
 		"prettier": "^2.4.1",
 		"prettier-plugin-svelte": "^2.4.0",
-		"svelte": "^3.44.0",
+		"svelte": "^3.57.0",
 		"svelte-check": "^2.2.6",
 		"svelte-preprocess": "^4.9.4",
 		"svelte-themes": "^0.0.8",
@@ -41,5 +49,8 @@
 		"tslib": "^2.3.1",
 		"typescript": "^4.5.4"
 	},
-	"type": "module"
+	"type": "module",
+	"dependencies": {
+		"@sveltejs/package": "^2.0.2"
+	}
 }
